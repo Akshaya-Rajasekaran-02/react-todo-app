@@ -20,7 +20,7 @@ const TaskList=()=>{
     const fetchWeather = async () => {
       try {
         const response = await axios.get(
-          `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/banglore?unitGroup=metric&key=${API_KEY}&contentType=json`
+          `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/banglore?unitGroup=metric&key=LJP2FRDQTX6ABDBJ773T8Y63F&contentType=json`
         );
         
         console.log("Weather Data:", response.data);
@@ -35,7 +35,8 @@ const TaskList=()=>{
   return (
     <div>
       <h3>Your Tasks are Listed below:</h3>
-      {console.log(weather.days[0].temp)}
+      {console.log("Hi AkshayaRajasekaran")}
+      {console.log(weather)}
       {weather && weather.days && weather.days.length > 0 && (
         <p>
            🌥️Current Weather: {weather.days[0].temp}°C, 📍Location:{weather.address}, {weather.description}
